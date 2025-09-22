@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe QR Scan - QR 스캔하기 전, 위험을 먼저 확인하세요</title>
+    <meta name="description" content="Google WebRisk 기반 실시간 보안 검사로 악성 사이트를 원천 차단. 안전한 QR 스캔의 새로운 기준.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://safeqr.sugaryple.com/">
+    <meta property="og:title" content="Safe QR Scan - 안전한 QR 코드 스캐너">
+    <meta property="og:description" content="Google WebRisk 기반 실시간 보안 검사로 악성 사이트를 원천 차단">
+    <meta property="og:image" content="https://safeqr.sugaryple.com/public/images/ic_launcher.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://safeqr.sugaryple.com/">
+    <meta property="twitter:title" content="Safe QR Scan - 안전한 QR 코드 스캐너">
+    <meta property="twitter:description" content="Google WebRisk 기반 실시간 보안 검사로 악성 사이트를 원천 차단">
+
+    <!-- Language -->
+    <link rel="alternate" hreflang="ko" href="https://safeqr.sugaryple.com/ko">
+    <link rel="alternate" hreflang="ja" href="https://safeqr.sugaryple.com/ja">
+    <link rel="alternate" hreflang="en" href="https://safeqr.sugaryple.com/en">
+    <link rel="alternate" hreflang="x-default" href="https://safeqr.sugaryple.com/">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://safeqr.sugaryple.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="public/images/ic_launcher_foreground.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Safe QR Scan",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "UtilitiesApplication",
+        "description": "Google WebRisk 기반 실시간 보안 QR 코드 스캐너",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "256"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <select id="languageSelect" aria-label="언어 선택">
+            <option value="ko" selected>한국어</option>
+            <option value="ja">日本語</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <img src="public/images/ic_launcher.png" alt="Safe QR Scan 로고" class="app-icon">
+            <h1 data-i18n="hero-title">QR 스캔하기 전, 위험을 먼저 확인하세요</h1>
+            <p class="subtitle" data-i18n="hero-subtitle">Google WebRisk 보안 검사로 악성 사이트를 실시간 차단. 안전한 QR 스캔의 새로운 기준.</p>
+
+
+            <!-- CTA Buttons -->
+            <div class="cta-buttons">
+                <a href="#" id="mainCTA" class="btn btn-primary" data-i18n="cta-download">지금 다운로드</a>
+                <div class="store-badges">
+                    <a href="https://apps.apple.com/app/safeqr" class="store-badge ios-badge" style="display:none;">
+                        <img src="public/images/Download_on_the_App_Store_Badge_KR_RGB_wht_100317.svg" alt="App Store에서 다운로드" loading="lazy">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.sugaryple.safeqr" class="store-badge android-badge" style="display:none;">
+                        <img src="public/images/GetItOnGooglePlay_Badge_Web_color_Korean.png" alt="Google Play에서 다운로드" loading="lazy">
+                    </a>
+                </div>
+            </div>
+
+            <p class="disclaimer" data-i18n="disclaimer">* 검사 결과는 최신 위협 정보에 기반하며 100%를 보장하지 않습니다.</p>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="trust-indicators">
+        <div class="container">
+            <div class="indicators-grid">
+                <div class="indicator">
+                    <span class="indicator-icon">🛡️</span>
+                    <h3 data-i18n="trust-1">Google WebRisk 실시간 보안 검사</h3>
+                </div>
+                <div class="indicator">
+                    <span class="indicator-icon">⚡</span>
+                    <h3 data-i18n="trust-2">0.3초 내 위협 탐지</h3>
+                </div>
+                <div class="indicator">
+                    <span class="indicator-icon">🔒</span>
+                    <h3 data-i18n="trust-3">악성코드/피싱/스파이웨어 차단</h3>
+                </div>
+                <div class="indicator">
+                    <span class="indicator-icon">📱</span>
+                    <h3 data-i18n="trust-4">iOS/Android 네이티브 지원</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem & Solution -->
+    <section class="problem-solution">
+        <div class="container">
+            <h2 data-i18n="problem-title">QR 코드의 숨겨진 위험</h2>
+
+            <div class="problems">
+                <div class="problem-item">
+                    <span class="problem-icon">🚨</span>
+                    <div>
+                        <h3 data-i18n="problem-1">QR 피싱 공격 급증</h3>
+                        <p data-i18n="problem-1-desc">2024년 기준 587% 증가</p>
+                    </div>
+                </div>
+                <div class="problem-item">
+                    <span class="problem-icon">😰</span>
+                    <div>
+                        <h3 data-i18n="problem-2">숨겨진 악성 URL 판별 불가</h3>
+                        <p data-i18n="problem-2-desc">육안으로 확인 불가능</p>
+                    </div>
+                </div>
+                <div class="problem-item">
+                    <span class="problem-icon">⚠️</span>
+                    <div>
+                        <h3 data-i18n="problem-3">한 번의 실수로 개인정보 유출</h3>
+                        <p data-i18n="problem-3-desc">복구 불가능한 피해 발생</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="solution">
+                <h2 data-i18n="solution-title">Safe QR Scan의 해결책</h2>
+                <div class="solution-flow">
+                    <div class="flow-step">
+                        <div class="step-number">1</div>
+                        <h4 data-i18n="solution-1">스캔 즉시 보안 검사</h4>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="step-number">2</div>
+                        <h4 data-i18n="solution-2">실시간 위협 데이터베이스</h4>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="step-number">3</div>
+                        <h4 data-i18n="solution-3">자동 차단 시스템</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <h2 data-i18n="features-title">주요 기능</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🔒</span>
+                    <h3 data-i18n="feature-1">URL 보안 검사</h3>
+                    <p data-i18n="feature-1-desc">Google WebRisk로 실시간 위협 탐지</p>
+                    <span class="feature-badge" data-i18n="premium">프리미엄</span>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📱</span>
+                    <h3 data-i18n="feature-2">멀티 바코드</h3>
+                    <p data-i18n="feature-2-desc">QR, 바코드, Data Matrix 등 모든 형식 지원</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📝</span>
+                    <h3 data-i18n="feature-3">히스토리</h3>
+                    <p data-i18n="feature-3-desc">스캔 기록 무제한 저장 및 관리</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🌍</span>
+                    <h3 data-i18n="feature-4">3개국어 지원</h3>
+                    <p data-i18n="feature-4-desc">한국어, 일본어, 영어 지원</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing">
+        <div class="container">
+            <h2 data-i18n="pricing-title">요금제</h2>
+            <p class="pricing-subtitle" data-i18n="pricing-subtitle">7일 무료 체험 후 언제든 취소 가능</p>
+
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3 data-i18n="free-plan">무료</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">0</span>
+                    </div>
+                    <ul class="features-list">
+                        <li>✅ <span data-i18n="free-feature-1">QR/바코드 스캔</span></li>
+                        <li>✅ <span data-i18n="free-feature-2">히스토리 무제한</span></li>
+                        <li>✅ <span data-i18n="free-feature-3">데이터 타입 액션</span></li>
+                        <li>❌ <span data-i18n="free-feature-4">URL 보안 검사 (일 5회)</span></li>
+                        <li>❌ <span data-i18n="free-feature-5">위협 자동 차단</span></li>
+                        <li>❌ <span data-i18n="free-feature-6">무제한 보안 스캔</span></li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="badge" data-i18n="popular">인기</div>
+                    <h3>Premium</h3>
+
+                    <div class="pricing-toggle">
+                        <button class="toggle-btn active" data-period="monthly" data-i18n="monthly">월간</button>
+                        <button class="toggle-btn" data-period="annual" data-i18n="annual">연간</button>
+                    </div>
+
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount" id="premium-amount">3.99</span>
+                        <span class="period" id="premium-period" data-i18n="per-month">/월</span>
+                    </div>
+                    <p class="savings" id="premium-savings" data-i18n="annual-savings" style="display: none;">연간 $8.89 절약 (17% 할인)</p>
+                    <ul class="features-list">
+                        <li>✅ <span data-i18n="pro-feature-1">QR/바코드 스캔</span></li>
+                        <li>✅ <span data-i18n="pro-feature-2">히스토리 무제한</span></li>
+                        <li>✅ <span data-i18n="pro-feature-3">데이터 타입 액션</span></li>
+                        <li>✅ <span data-i18n="pro-feature-4">무제한 URL 보안 검사</span></li>
+                        <li>✅ <span data-i18n="pro-feature-5">위협 자동 차단</span></li>
+                        <li>✅ <span data-i18n="pro-feature-6">실시간 위협 데이터베이스</span></li>
+                    </ul>
+                    <button class="btn btn-primary" data-i18n="start-trial">7일 무료 체험 시작</button>
+                </div>
+            </div>
+
+            <p class="pricing-note" data-i18n="pricing-note">* 결제/관리/환불은 각 앱스토어 정책을 따르며, 랜딩에서는 결제하지 않습니다.</p>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="use-cases">
+        <div class="container">
+            <h2 data-i18n="usecase-title">이런 분들께 필요해요</h2>
+            <div class="use-case-grid">
+                <div class="use-case">
+                    <h3 data-i18n="usecase-1">비즈니스</h3>
+                    <p data-i18n="usecase-1-desc">사내 포스터/택배 라벨의 QR 확인 → 의심 URL 차단으로 보안 사고 예방</p>
+                </div>
+                <div class="use-case">
+                    <h3 data-i18n="usecase-2">가정/학부모</h3>
+                    <p data-i18n="usecase-2-desc">자녀가 스캔 전 '위험' 안내로 유해 접속 방지</p>
+                </div>
+                <div class="use-case">
+                    <h3 data-i18n="usecase-3">고령층</h3>
+                    <p data-i18n="usecase-3-desc">복잡한 보안 지식 없이 색/문구로 즉시 판단</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 data-i18n="faq-title">자주 묻는 질문</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq-1-q">어떤 위협을 막나요?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq-1-a">MALWARE(악성코드), PHISHING(피싱), UNWANTED SOFTWARE(원치 않는 소프트웨어)를 탐지하고 경고 또는 차단합니다.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq-2-q">오프라인에서도 되나요?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq-2-a">카메라 스캔은 가능하나 URL 보안 검사에는 네트워크 연결이 필요합니다.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq-3-q">개인정보는 수집하나요?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq-3-a">검사에 필요한 최소 URL 정보만 처리하며, 개인 식별 정보는 저장하지 않습니다.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq-4-q">무료와 유료 차이는?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq-4-a">Pro 버전에서는 실시간 URL 보안 검사, 자동 차단, 무제한 보안 스캔 기능을 제공합니다.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq-5-q">환불/해지 방법은?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq-5-a">iOS는 App Store, Android는 Google Play Store의 구독 관리 메뉴에서 언제든 취소 가능합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="public/images/ic_launcher_foreground.png" alt="Safe QR Scan" width="40" height="40">
+                    <span>Safe QR Scan</span>
+                </div>
+                <nav class="footer-links">
+                    <a href="privacy-policy.html" data-i18n="privacy">개인정보처리방침</a>
+                    <span>|</span>
+                    <a href="terms-of-service.html" data-i18n="terms">이용약관</a>
+                    <span>|</span>
+                    <a href="mailto:sugaryple2023@gmail.com" data-i18n="contact">문의</a>
+                </nav>
+            </div>
+            <p class="copyright">© 2025 Sugaryple, All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

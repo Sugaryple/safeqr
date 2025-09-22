@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /privacy-policy.md
+Disallow: /terms-of-service.md
+
+Sitemap: https://safeqr.sugaryple.com/sitemap.xml
