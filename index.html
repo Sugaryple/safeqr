@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safe QR Scan - QR 스캔하기 전, 위험을 먼저 확인하세요</title>
     <meta name="description" content="Google WebRisk 기반 실시간 보안 검사로 악성 사이트를 원천 차단. 안전한 QR 스캔의 새로운 기준.">
+    <meta name="keywords" content="QR scanner, QR code scanner, QR 코드 스캐너, QRコードスキャナー, 보안 QR, 안전한 QR 스캔, セキュリティQR, 安全なQRスキャン, secure QR scan, WebRisk, Google WebRisk, 악성코드 차단, マルウェアブロック, malware blocking, 피싱 차단, フィッシング対策, phishing protection, Safe QR Scan, セーフQRスキャン, 큐알코드, バーコード, barcode scanner">
+    <meta name="author" content="Sugaryple">
+    <meta name="theme-color" content="#1976d2">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -12,6 +15,8 @@
     <meta property="og:title" content="Safe QR Scan - 안전한 QR 코드 스캐너">
     <meta property="og:description" content="Google WebRisk 기반 실시간 보안 검사로 악성 사이트를 원천 차단">
     <meta property="og:image" content="https://safeqr.sugaryple.com/public/images/ic_launcher.png">
+    <meta property="og:image:alt" content="Safe QR Scan 앱 로고">
+    <meta property="og:site_name" content="Safe QR Scan">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -36,27 +41,147 @@
 
     <!-- Structured Data -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "MobileApplication",
-        "name": "Safe QR Scan",
-        "operatingSystem": "iOS, Android",
-        "applicationCategory": "UtilitiesApplication",
-        "description": "Google WebRisk 기반 실시간 보안 QR 코드 스캐너",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "MobileApplication",
+            "name": "Safe QR Scan",
+            "url": "https://safeqr.sugaryple.com",
+            "operatingSystem": ["iOS", "Android"],
+            "applicationCategory": "UtilitiesApplication",
+            "description": "Google WebRisk 기반 실시간 보안 QR 코드 스캐너",
+            "image": "https://safeqr.sugaryple.com/public/images/ic_launcher.png",
+            "softwareVersion": "1.0",
+            "author": {
+                "@type": "Organization",
+                "name": "Sugaryple",
+                "url": "https://sugaryple.com"
+            },
+            "offers": [
+                {
+                    "@type": "Offer",
+                    "name": "Free Plan",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Premium Plan",
+                    "price": "3.99",
+                    "priceCurrency": "USD",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "3.99",
+                        "priceCurrency": "USD",
+                        "referenceQuantity": {
+                            "@type": "QuantitativeValue",
+                            "value": "1",
+                            "unitCode": "MON"
+                        }
+                    }
+                }
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "ratingCount": "256"
+            }
         },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "256"
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Sugaryple",
+            "url": "https://sugaryple.com",
+            "logo": "https://safeqr.sugaryple.com/public/images/ic_launcher.png",
+            "email": "contact@sugaryple.com",
+            "foundingDate": "2024",
+            "sameAs": []
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "어떤 위협을 막나요?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "MALWARE(악성코드), PHISHING(피싱), UNWANTED SOFTWARE(원치 않는 소프트웨어)를 탐지하고 경고 또는 차단합니다."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "오프라인에서도 되나요?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "카메라 스캔은 가능하나 URL 보안 검사에는 네트워크 연결이 필요합니다."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "개인정보는 수집하나요?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "검사에 필요한 최소 URL 정보만 처리하며, 개인 식별 정보는 저장하지 않습니다."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "무료와 유료 차이는?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Pro 버전에서는 실시간 URL 보안 검사, 자동 차단, 무제한 보안 스캔 기능을 제공합니다."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "환불/해지 방법은?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "iOS는 App Store, Android는 Google Play Store의 구독 관리 메뉴에서 언제든 취소 가능합니다."
+                    }
+                }
+            ]
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://safeqr.sugaryple.com/"
+                }
+            ]
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Safe QR Scan",
+            "url": "https://safeqr.sugaryple.com/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://safeqr.sugaryple.com/?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
         }
-    }
+    ]
     </script>
 </head>
 <body>
+    <!-- Breadcrumb Navigation (hidden visually but available for SEO) -->
+    <nav aria-label="breadcrumb" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;">
+        <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="https://safeqr.sugaryple.com/">
+                    <span itemprop="name">Home</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+        </ol>
+    </nav>
+
     <!-- Language Selector -->
     <div class="language-selector">
         <select id="languageSelect" aria-label="언어 선택">
@@ -66,10 +191,12 @@
         </select>
     </div>
 
+    <!-- Main Content -->
+    <main>
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <img src="public/images/ic_launcher.png" alt="Safe QR Scan 로고" class="app-icon">
+            <img src="public/images/ic_launcher.png" alt="Safe QR Scan 로고" class="app-icon" width="192" height="192">
             <h1 data-i18n="hero-title">QR 스캔하기 전, 위험을 먼저 확인하세요</h1>
             <p class="subtitle" data-i18n="hero-subtitle">Google WebRisk 보안 검사로 악성 사이트를 실시간 차단. 안전한 QR 스캔의 새로운 기준.</p>
 
@@ -79,10 +206,10 @@
                 <a href="#" id="mainCTA" class="btn btn-primary" data-i18n="cta-download">지금 다운로드</a>
                 <div class="store-badges">
                     <a href="https://apps.apple.com/app/safeqr" class="store-badge ios-badge" style="display:none;">
-                        <img src="public/images/Download_on_the_App_Store_Badge_KR_RGB_wht_100317.svg" alt="App Store에서 다운로드" loading="lazy">
+                        <img src="public/images/Download_on_the_App_Store_Badge_KR_RGB_wht_100317.svg" alt="App Store에서 다운로드" loading="lazy" width="135" height="40">
                     </a>
                     <a href="https://play.google.com/store/apps/details?id=com.sugaryple.safeqr" class="store-badge android-badge" style="display:none;">
-                        <img src="public/images/GetItOnGooglePlay_Badge_Web_color_Korean.png" alt="Google Play에서 다운로드" loading="lazy">
+                        <img src="public/images/GetItOnGooglePlay_Badge_Web_color_Korean.png" alt="Google Play에서 다운로드" loading="lazy" width="135" height="40">
                     </a>
                 </div>
             </div>
@@ -324,13 +451,14 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="public/images/ic_launcher_foreground.png" alt="Safe QR Scan" width="40" height="40">
+                    <img src="public/images/ic_launcher_foreground.png" alt="Safe QR Scan" width="40" height="40" loading="lazy">
                     <span>Safe QR Scan</span>
                 </div>
                 <nav class="footer-links">
