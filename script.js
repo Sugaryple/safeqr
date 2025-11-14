@@ -327,7 +327,7 @@ function setupDownloadButtons() {
     if (os === 'ios') {
         iosBadge.style.display = 'block';
         androidBadge.style.display = 'none';
-        mainCTA.href = 'https://apps.apple.com/app/safeqr';
+        mainCTA.href = 'https://apps.apple.com/app/id6747948666';
     } else if (os === 'android') {
         androidBadge.style.display = 'block';
         iosBadge.style.display = 'none';
